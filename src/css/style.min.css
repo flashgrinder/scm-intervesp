@@ -1,0 +1,386 @@
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;
+
+400;500;600;700&display=swap");
+
+:root {
+  --color-white: #FFFFFF;
+  --color-black: #000;
+  --color-blue: #00A0E3;
+  --color-green: rgb(0, 171, 71);
+  --color-dark-green: #73A51F;
+  --color-invalid: #e61d1d;
+  --color-yellow: #fbc200;
+  --font-roboto: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Base */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Animation */
+
+/* Base Classes */
+
+/* Containers */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.container-full {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Hide */
+
+.hide {
+  display: none !important;
+}
+
+/* Position */
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+/* Background */
+
+.bg--white {
+  background-color: var(--color-white);
+}
+
+.bg--dark {
+  background-color: var(--color-dark);
+}
+
+/* Links */
+
+.link {
+  text-decoration: none;
+  transition: ease 0.3s;
+}
+
+.link:hover {
+  color: var(--color-orange);
+}
+
+/* Title */
+
+.title {
+  font-family: var(--font-inter);
+  font-style: normal;
+  margin: 0;
+}
+
+.title--big {
+  font-size: calc(16px + 29 * ((100vw - 320px) / 1120));
+}
+
+@media screen and (min-width: 1440px){
+
+  .title--big{
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 320px){
+
+  .title--big{
+    font-size: 16px;
+  }
+}
+
+.title--large {
+  font-size: calc(20px + 6 * ((100vw - 1024px) / 416));
+}
+
+@media screen and (min-width: 1440px){
+
+  .title--large{
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+
+  .title--large{
+    font-size: 20px;
+  }
+}
+
+.title--medium {
+  font-size: calc(18px + 4 * ((100vw - 1024px) / 416));
+}
+
+@media screen and (min-width: 1440px){
+
+  .title--medium{
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+
+  .title--medium{
+    font-size: 18px;
+  }
+}
+
+.title--small {
+  font-size: 16px;
+}
+
+.title--tiny {
+  font-size: 12px;
+}
+
+.title--white {
+  color: var(--color-white);
+}
+
+.title--black {
+  color: var(--color-black);
+}
+
+.title--w-light {
+  font-weight: 300;
+}
+
+.title--w-normal {
+  font-weight: 400;
+}
+
+.title--w-medium {
+  font-weight: 500;
+}
+
+.title--w-bold {
+  font-weight: bold;
+}
+
+.title--w-black {
+  font-weight: 900;
+}
+
+.title--uppercase {
+  text-transform: uppercase;
+}
+
+.title--indent {
+  margin: 0 0 30px 50px;
+}
+
+/* Text */
+
+.text {
+  font-family: var(--font-inter);
+  font-style: normal;
+  margin: 0;
+}
+
+.text--black {
+  color: var(--color-black);
+}
+
+.text--white {
+  color: var(--color-white);
+}
+
+.text--big {
+  font-size: calc(20px + 10 * ((100vw - 320px) / 1120));
+}
+
+@media screen and (min-width: 1440px){
+
+  .text--big{
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 320px){
+
+  .text--big{
+    font-size: 20px;
+  }
+}
+
+.text--large {
+  font-size: calc(14px + 8 * ((100vw - 320px) / 1120));
+}
+
+@media screen and (min-width: 1440px){
+
+  .text--large{
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 320px){
+
+  .text--large{
+    font-size: 14px;
+  }
+}
+
+.text--normal {
+  font-size: calc(12px + 4 * ((100vw - 1024px) / 416));
+}
+
+@media screen and (min-width: 1440px){
+
+  .text--normal{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+
+  .text--normal{
+    font-size: 12px;
+  }
+}
+
+.text--small {
+  font-size: 12px;
+}
+
+.text--tiny {
+  font-size: 10px;
+}
+
+.text--w-light {
+  font-weight: 300;
+}
+
+.text--w-regular {
+  font-weight: normal;
+}
+
+.text--w-medium {
+  font-weight: 500;
+}
+
+.text--w-bold {
+  font-weight: 700;
+}
+
+.text--w-black {
+  font-weight: 900;
+}
+
+.text--italic {
+  font-style: italic;
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+/* ANOTHER MODULES */
+
+/* Swiper Slider Examples*/
+
+/* ANOTHER MODULES */
+
+/* Blocks */
+
+/* Page */
+
+.page {
+  position: relative;
+  margin: 0;
+  font-family: var(--font-roboto);
+  font-size: 16px;
+  line-height: 1.35;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+.page__container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) {
+  .hide-large {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hide-tablet {
+    display: none !important;
+  }
+
+  .title--indent {
+    margin: 0 0 20px 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .container-full {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hide-mobile {
+    display: none !important;
+  }
+
+  .title--indent {
+    margin: 0 0 20px 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .container-full {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

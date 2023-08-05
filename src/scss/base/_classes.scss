@@ -14,8 +14,8 @@
     display: none !important;
 }
 
-.hide-medium {
-	@include medium(display, none !important);
+.hide-large {
+	@include large(display, none !important);
 }
 
 .hide-tablet {
@@ -65,7 +65,7 @@
 /* Title */
 
 .title {
-    font-family: var(--font-gotham);
+    font-family: var(--font-inter);
     font-style: normal;
     margin: 0;
     &--big {
@@ -86,14 +86,11 @@
     &--tiny {
         font-size: 12px;
     }
-    &--orange {
-        color: var(--color-orange);
-    }
     &--white {
         color: var(--color-white);
 	}
-    &--black-gray {
-		color: var(--color-black-gray); 
+    &--black {
+		color: var(--color-black);
 	}
 	&--w-light {
 		font-weight: 300;
@@ -124,14 +121,11 @@
 /* Text */
 
 .text {
-    font-family: var(--font-roboto);
+    font-family: var(--font-inter);
     font-style: normal;
     margin: 0;
-	&--black-gray {
-		color: var(--color-black-gray); 
-	}
-	&--orange {
-		color: var(--color-orange);
+	&--black {
+		color: var(--color-black);
 	}
 	&--white {
 		color: var(--color-white);
