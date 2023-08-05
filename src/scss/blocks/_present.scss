@@ -1,0 +1,89 @@
+.present {
+  background-image: url('../img/bg-007.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #eefcef;
+}
+
+.present__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
+  grid-gap: 30px;
+  @include mobile-block {
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+  }
+}
+
+.present-slider {
+  @include mobile(order, 1);
+}
+
+.present__outer {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.present__swiper-wrapper.swiper-wrapper {
+  align-items: stretch;
+}
+
+.present__slide.swiper-slide {
+  height: auto;
+}
+
+.present__slide--play-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.present__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.present__pic {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.present__img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.present__pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.present__bullet {
+  display: inline-block;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: #D2D2D2;
+  transform: scale(1);
+  transition: border .2s ease-in-out, transform .2s ease-in-out;
+}
+
+.present__bullet:hover {
+  transform: scale(1);
+  background: var(--color-green);
+}
+
+.present__bullet--active {
+  transform: scale(1.1);
+  background: var(--color-green);;
+}
+
+.present__bullet ~ .present__bullet {
+  margin-left: 15px;
+}

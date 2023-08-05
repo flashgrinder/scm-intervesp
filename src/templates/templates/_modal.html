@@ -1,0 +1,63 @@
+<!-- Modal -->
+<div class="modal hystmodal" id="feedback" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="modal__body hystmodal__window" role="modal window feedback" aria-modal="true">
+            <div class="modal__close" data-hystclose>
+                <svg class="modal__close-svg" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L12 12M12 1L1 12" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <h3 class="modal__title title title--small title--dark title--w-medium center">
+                Оставить заявку
+            </h3>
+            <div class="wpcf7">
+                <form action="" id="callback-form" class="modal__form wpcf7-form">
+                    <div class="modal__field">
+                        <input type="text" name="name" class="modal__input" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="modal__field">
+                        <input type="email" name="email" class="modal__input" placeholder="Ваше Email" required>
+                    </div>
+                    <div class="modal__field">
+                        <input type="tel" name="phone" class="modal__input tel" placeholder="Ваш телефон" required>
+                    </div>
+                    <div class="modal__field">
+                        <input type="text" name="region" class="modal__input" placeholder="Ваш регион" required>
+                    </div>
+                    <div class="modal__wrap-policy">
+                        <div class="modal__policy text text--small text--black text--w-light center">
+                            Ваши данные находятся под защитой
+                        </div>
+                    </div>
+                    <div class="modal__actions">
+                        <input type="submit" value="Отправить" class="modal__btn button button--primary button--small">
+                        <span class="wpcf7-spinner"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /. Modal -->
+<!-- Success -->
+<div class="modal modal--success hystmodal js-modal-success" id="success" aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__body hystmodal__window" role="modal window feedback" aria-modal="true">
+            <div class="modal__close" data-hystclose>
+                <svg class="modal__close-svg" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L12 12M12 1L1 12" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="modal__wrapper-success">
+                <div class="modal__success-icon">
+                    <img src="/img/check-success.svg" alt="Заявка принята" class="modal__success-img">
+                </div>
+                <div class="modal__success-text text text--large text--black text--w-light">
+                    Спасибо, ваша заявка принята! <br>
+                    <a class="modal__catalog link" href="./Каталог_SCM_с_контактами_КИВ_легкий.pdf" download>Скачать каталог оборудования SCM</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /. Success -->

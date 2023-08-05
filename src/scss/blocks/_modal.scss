@@ -1,0 +1,251 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  background-color: transparent;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(20px);
+  visibility: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  opacity: 0;
+  transition:  visibility .3s ease-in-out, opacity .3s ease-in-out;
+  transition-delay: .3s;
+  position: fixed;
+}
+
+.modal.hystmodal--active {
+  visibility: visible;
+  opacity: 1;
+  position: fixed;
+  transition-delay: 0s;
+}
+
+.modal__body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #ECECEC;
+  opacity: 0.8;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 100%;
+  padding: 35px 45px;
+  overflow-x: hidden;
+  margin-top: 90px;
+  /*@include mobileXS-block {*/
+  /*  padding: 30px;*/
+  /*  max-width: 100%;*/
+  /*}*/
+}
+
+.modal__close {
+  display: inline-block;
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  /*@include mobileXS-block {*/
+  /*  top: 15px;*/
+  /*  right: 15px;*/
+  /*}*/
+}
+
+.modal__close-svg {
+  width: 20px;
+  height: 20px;
+  fill: #848484;
+  stroke: #848484;
+}
+
+.modal__title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.modal__form {
+  /*font-family: var(--font-inter);*/
+  width: 100%;
+  max-width: 595px;
+  margin: 0 auto;
+}
+
+.modal__form.invalid .modal__input {
+  border: 1px solid #FF0000;
+}
+
+.modal__field ~ .modal__field {
+  margin-top: 30px;
+}
+
+.modal__input {
+  position: relative;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 17px;
+  width: 100%;
+  padding: 18px 20px !important;
+  background: #FAFAFA;
+  border: 1px solid #F5F5F5;
+  color: black;
+  border-radius: 10px;
+}
+
+.modal__input:focus,
+.modal__input:target,
+.modal__input:active {
+  outline: 1px solid rgb(0, 171, 71);
+  border: 1px solid rgb(0, 171, 71);
+}
+
+.modal__input::placeholder {
+  font-size: 16px;
+  font-weight: normal;
+  color: #B5B5B5;
+}
+
+.modal__actions {
+  position: relative;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.modal__actions .modal__btn {
+  padding: 15px 50px;
+  border: 1px solid transparent;
+}
+
+.modal__actions .modal__btn:focus,
+.modal__actions .modal__btn:target {
+  border: 1px solid rgb(0, 171, 71);
+}
+
+.modal__wrap-policy {
+  text-align: center;
+}
+
+.modal__policy {
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.modal__policy::before {
+  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzM4NV82MjgwKSI+CjxwYXRoIGQ9Ik0xMi43NSA4LjI1SDUuMjVDNC40MjE1NyA4LjI1IDMuNzUgOC45MjE1NyAzLjc1IDkuNzVWMTQuMjVDMy43NSAxNS4wNzg0IDQuNDIxNTcgMTUuNzUgNS4yNSAxNS43NUgxMi43NUMxMy41Nzg0IDE1Ljc1IDE0LjI1IDE1LjA3ODQgMTQuMjUgMTQuMjVWOS43NUMxNC4yNSA4LjkyMTU3IDEzLjU3ODQgOC4yNSAxMi43NSA4LjI1WiIgc3Ryb2tlPSIjNkQ2ODY0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTkgMTIuNzVDOS40MTQyMSAxMi43NSA5Ljc1IDEyLjQxNDIgOS43NSAxMkM5Ljc1IDExLjU4NTggOS40MTQyMSAxMS4yNSA5IDExLjI1QzguNTg1NzkgMTEuMjUgOC4yNSAxMS41ODU4IDguMjUgMTJDOC4yNSAxMi40MTQyIDguNTg1NzkgMTIuNzUgOSAxMi43NVoiIHN0cm9rZT0iIzZENjg2NCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik02IDguMjVWNS4yNUM2IDQuNDU0MzUgNi4zMTYwNyAzLjY5MTI5IDYuODc4NjggMy4xMjg2OEM3LjQ0MTI5IDIuNTY2MDcgOC4yMDQzNSAyLjI1IDkgMi4yNUM5Ljc5NTY1IDIuMjUgMTAuNTU4NyAyLjU2NjA3IDExLjEyMTMgMy4xMjg2OEMxMS42ODM5IDMuNjkxMjkgMTIgNC40NTQzNSAxMiA1LjI1VjguMjUiIHN0cm9rZT0iIzZENjg2NCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjwvZz4KPGRlZnM+CjxjbGlwUGF0aCBpZD0iY2xpcDBfMzg1XzYyODAiPgo8cmVjdCB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==");
+  margin-right: 10px;
+}
+
+.modal__link-policy {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.modal .wpcf7-spinner {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 10px;
+}
+
+.modal .wpcf7-spinner {
+  visibility: hidden;
+  display: inline-block;
+  background-color: #23282d;
+  opacity: 0.75;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 100%;
+  padding: 0;
+  margin: 0 14px;
+}
+
+.modal .wpcf7-spinner::before {
+  content: '';
+  position: absolute;
+  background-color: #fbfbfc;
+  top: 4px;
+  left: 4px;
+  width: 6px;
+  height: 6px;
+  border: none;
+  border-radius: 100%;
+  transform-origin: 8px 8px;
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.modal .wpcf7 form .wpcf7-response-output {
+  /*font-family: var(--font-inter);*/
+  font-size: 14px;
+  text-align: center;
+  margin: 20px 0 0;
+  padding: 5px 1em;
+  border: 1px solid var(--color-yellow);
+  color: var(--color-dark);
+  border-radius: 1px;
+}
+
+.modal .wpcf7 form.invalid .wpcf7-response-output,
+.modal .wpcf7 form.unaccepted .wpcf7-response-output {
+  border: 1px solid var(--color-yellow);
+}
+
+.modal .wpcf7 form.sent .wpcf7-response-output {
+  border-color: var(--color-green);
+}
+
+.modal__form .wpcf7-not-valid-tip {
+  text-align: center;
+  /*font-family: var(--font-inter);*/
+  font-size: 12px;
+  margin-top: 5px;
+  color: var(--color-invalid);
+  position: absolute;
+  width: 100%;
+  top: -45px;
+}
+
+/* Succes */
+.modal__wrapper-success {
+  opacity: 0;
+  text-align: center;
+  transition: opacity 1s ease-in-out;
+}
+
+.modal--success.hystmodal--active .modal__wrapper-success {
+  opacity: 1;
+}
+
+.modal--success.hystmodal--active .modal__success-text {
+  transform: translateY(0);
+}
+
+.modal--success .modal__body {
+  padding: 50px;
+}
+
+.modal__success-text {
+  margin-top: 50px;
+  transform: translateY(20px);
+  transition: transform .8s ease-in-out;
+}
+
+.modal__catalog {
+  display: inline-block;
+  margin-top: 30px;
+}

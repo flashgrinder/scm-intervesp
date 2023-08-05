@@ -1,0 +1,34 @@
+.organizers {
+  background-image: url('../img/bg-007.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #C7E9FC;
+}
+
+.organizers__items {
+  display: flex;
+  justify-content: space-around;
+  grid-gap: 50px;
+  align-items: center;
+  @include mobileXS-block {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.organizers__link {
+  text-decoration: none;
+  transition: transform .3s ease-in-out;
+}
+
+.organizers__link:hover {
+  transform: scale(1.1);
+}
+
+.organizers__logo {
+  display: block;
+}
+
+.organizers__action {
+  margin-top: 50px;
+}

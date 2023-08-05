@@ -1,0 +1,34 @@
+.slider-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 100%;
+  z-index: 101;
+  padding: 0 20px;
+  transform: translateY(-50%);
+}
+
+.slider-nav__arrow {
+  cursor: pointer;
+}
+
+.slider-nav__arrow-svg {
+  display: block;
+  fill: var(--color-white);
+  transition: fill .3s ease-in-out;
+}
+
+.slider-nav__arrow:hover .slider-nav__arrow-svg {
+  fill: var(--color-green);
+}
+
+.slider-nav__arrow--prev.swiper-button-disabled,
+.slider-nav__arrow--next.swiper-button-disabled {
+  opacity: .35;
+  cursor: auto;
+  pointer-events: none;
+}

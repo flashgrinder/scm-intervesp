@@ -1,0 +1,29 @@
+.ex__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include mobile-block {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.ex__item {
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  @include mobile-block {
+    width: 100%;
+    align-items: center;
+  };
+}
+
+.ex__item--modal {
+  cursor: pointer;
+}
+
+.ex__img-item {
+  display: block;
+  width: auto;
+  height: auto;
+}

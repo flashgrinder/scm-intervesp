@@ -1,0 +1,39 @@
+.gallery {
+  padding-top: 50px;
+}
+
+.gallery__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  @include mobile-block {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include mobileXS-block {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.gallery__item {
+  cursor: pointer;
+  position: relative;
+}
+
+.gallery__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  transition: background-color .3s ease-in-out;
+  z-index: 0;
+}
+
+.gallery__item:hover::before {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gallery__img-item {
+  display: block;
+}

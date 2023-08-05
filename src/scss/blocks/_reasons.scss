@@ -1,0 +1,28 @@
+.reasons__items {
+  display: flex;
+  grid-gap: 20px;
+  justify-content: space-between;
+  @include mobile-block {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.reasons__item {
+  display: flex;
+  justify-content: center;
+  @include mobile-block {
+    align-items: center;
+  };
+}
+
+.reasons__item:first-child {
+  @include mobile(width, 50%);
+}
+
+.reasons__img-item {
+  display: block;
+  width: auto;
+  height: auto;
+}
