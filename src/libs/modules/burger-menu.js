@@ -9,7 +9,7 @@ let isOpen = burger.classList.contains('is-open');
 let tl = gsap.timeline({defaults: {duration: .2, ease: 'power3.out'}});
 
 tl.paused(true);
-tl.to('.header__inner', {opacity: 1, visibility: 'visible', autoAlpha: 1, ease: 'power3.out'});
+// tl.to('.header__inner', {opacity: 1, visibility: 'visible', autoAlpha: 1, ease: 'power3.out'});
 // tl.to('.header__menu-list > .header__menu-item', {opacity: 1, x: '0px', stagger: .1, ease: 'power3.out'});
 
 function open() {

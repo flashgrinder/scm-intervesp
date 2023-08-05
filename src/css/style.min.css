@@ -1,8 +1,6 @@
 /* Fonts */
 
-@import url(https://fonts.googleapis.com/css2?family=Inter:wght@300;
-
-400;500;600;700&display=swap);
+/* Variables */
 
 :root {
   --color-white: #FFFFFF;
@@ -133,16 +131,16 @@ img {
   font-size: calc(16px + 29 * ((100vw - 320px) / 1120));
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1440px) {
 
-  .title--big{
+  .title--big {
     font-size: 45px;
   }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) {
 
-  .title--big{
+  .title--big {
     font-size: 16px;
   }
 }
@@ -151,16 +149,16 @@ img {
   font-size: calc(20px + 6 * ((100vw - 1024px) / 416));
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1440px) {
 
-  .title--large{
+  .title--large {
     font-size: 26px;
   }
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
 
-  .title--large{
+  .title--large {
     font-size: 20px;
   }
 }
@@ -169,16 +167,16 @@ img {
   font-size: calc(18px + 4 * ((100vw - 1024px) / 416));
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1440px) {
 
-  .title--medium{
+  .title--medium {
     font-size: 22px;
   }
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
 
-  .title--medium{
+  .title--medium {
     font-size: 18px;
   }
 }
@@ -263,16 +261,16 @@ img {
   font-size: calc(20px + 10 * ((100vw - 320px) / 1120));
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1440px) {
 
-  .text--big{
+  .text--big {
     font-size: 30px;
   }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) {
 
-  .text--big{
+  .text--big {
     font-size: 20px;
   }
 }
@@ -281,16 +279,16 @@ img {
   font-size: calc(14px + 8 * ((100vw - 320px) / 1120));
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1440px) {
 
-  .text--large{
+  .text--large {
     font-size: 22px;
   }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) {
 
-  .text--large{
+  .text--large {
     font-size: 14px;
   }
 }
