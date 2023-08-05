@@ -55,16 +55,16 @@
   }
 }
 
-.menu__item {
+.header__menu-item.menu__item {
   border-bottom: 5px solid transparent;
   transition: border .3s ease-in-out;
 }
 
-.menu__item:hover {
+.header__menu-item.menu__item:hover {
   border-bottom: 5px solid var(--color-green);
 }
 
-.menu__link {
+.header__menu-link.menu__link {
   display: block;
   padding: 40px 20px;
   text-decoration: none;
@@ -73,6 +73,6 @@
   @include mobile(padding, 20px 10px);
 }
 
-.menu__item:hover .menu__link {
+.header__menu-item.menu__item:hover .header__menu-link.menu__link {
   color: var(--color-green);
 }
