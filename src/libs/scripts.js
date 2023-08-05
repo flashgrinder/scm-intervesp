@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
 
     gsap.config({
         nullTargetWarn: true,
-        force3D: true
+        // force3D: true
     });
 
     modal.init();

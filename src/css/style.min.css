@@ -579,6 +579,7 @@ img {
   left: 0;
   top: auto;
   overflow: hidden;
+  display: none;
 }
 
 .hystmodal--active {
@@ -589,6 +590,7 @@ img {
 .hystmodal--active {
   pointer-events: auto;
   visibility: visible;
+  display: block;
 }
 
 .hystmodal__wrap {
