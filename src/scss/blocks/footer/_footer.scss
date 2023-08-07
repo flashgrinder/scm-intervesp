@@ -35,8 +35,16 @@
 }
 
 .footer__social {
+  display: flex;
+  align-items: center;
   color: #b5babe;
   text-decoration: none;
+}
+
+.footer__social-icon {
+  display: block;
+  margin-right: 10px;
+  width: 36px;
 }
 
 .footer__col-title {

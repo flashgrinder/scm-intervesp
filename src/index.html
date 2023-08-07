@@ -58,6 +58,13 @@
                         </a>
                         </li>
                         <li class="header__menu-item menu__item">
+                            <a href="#video" class="header__menu-link menu__link">
+
+                            Видео
+
+                        </a>
+                        </li>
+                        <li class="header__menu-item menu__item">
                             <a href="#contacts" class="header__menu-link menu__link">
 
                             Контакты
@@ -97,6 +104,26 @@
                 ПРЕЗЕНТАЦИЯ НОВИНОК SCM
 
             </h1>
+                    <div class="main-screen__countdown">
+                        <div id="countdown" class="countdown">
+                            <div class="countdown__number">
+                                <span class="js-days countdown__time title title--white title--big title--w-bold title--uppercase center"></span>
+                                <span class="countdown__text title title--white title--small title--w-medium center">Дней</span>
+                            </div>
+                            <div class="countdown__number">
+                                <span class="js-hours countdown__time title title--white title--big title--w-bold title--uppercase center"></span>
+                                <span class="countdown__text title title--white title--small title--w-medium center">Часов</span>
+                            </div>
+                            <div class="countdown__number">
+                                <span class="js-minutes countdown__time title title--white title--big title--w-bold title--uppercase center"></span>
+                                <span class="countdown__text title title--white title--small title--w-medium center">Минут</span>
+                            </div>
+                            <div class="countdown__number">
+                                <span class="js-seconds countdown__time title title--white title--big title--w-bold title--uppercase center"></span>
+                                <span class="countdown__text title title--white title--small title--w-medium center">Секунд</span>
+                            </div>
+                        </div>
+                    </div>
                     <h3 class="main-screen__time title title--white title--big title--w-bold title--uppercase center">
 
                 24 августа 2023
@@ -345,13 +372,41 @@
                     <div class="ex__item">
                         <img src="img/ex/ex-7.jpg" alt="" class="ex__img-item">
                     </div>
-                    <div class="ex__item ex__item--modal" data-modal="#feedback">
+                    <div class="ex__item ex__item--modal" data-modal="#catalog">
                         <img src="img/ex/ex-8.png" alt="" class="ex__img-item">
                     </div>
                 </div>
             </div>
         </section>
         <!-- /. Ex -->
+
+        <!-- Organizers -->
+        <section class="organizers block-padding">
+            <div class="organizers__body container">
+                <h2 class="numbers__heading title title--black title--large title--w-bold center title--line title--indent">
+
+            Организаторы
+
+        </h2>
+                <div class="organizers__items">
+                    <a href="https://intervesp.ru/" class="organizers__link" target="_blank">
+                        <img src="img/logo_scm.svg" alt="" class="organizers__logo">
+                    </a>
+                    <a href="https://www.scmgroup.com/ru" class="organizers__link" target="_blank">
+                        <img src="img/logo_fs.svg" alt="" class="organizers__logo">
+                    </a>
+                    <a href="https://x2media.ru/" class="organizers__link" target="_blank">
+                        <img src="img/x2media.svg" alt="" class="organizers__logo">
+                    </a>
+                </div>
+                <div class="organizers__action center">
+                    <button class="organizers__button button button--primary" data-modal="#feedback">
+                        Зарегистрироваться
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- /. Organizers -->
 
         <!-- Video -->
         <section class="video" id="video">
@@ -392,34 +447,6 @@
             </div>
         </section>
         <!-- /. Video -->
-
-        <!-- Organizers -->
-        <section class="organizers block-padding">
-            <div class="organizers__body container">
-                <h2 class="numbers__heading title title--black title--large title--w-bold center title--line title--indent">
-
-            Организаторы
-
-        </h2>
-                <div class="organizers__items">
-                    <a href="https://intervesp.ru/" class="organizers__link" target="_blank">
-                        <img src="img/logo_scm.png" alt="" class="organizers__logo">
-                    </a>
-                    <a href="https://www.scmgroup.com/ru" class="organizers__link" target="_blank">
-                        <img src="img/logo_fs.png" alt="" class="organizers__logo">
-                    </a>
-                    <a href="https://x2media.ru/" class="organizers__link" target="_blank">
-                        <img src="img/x2media.webp" alt="" class="organizers__logo">
-                    </a>
-                </div>
-                <div class="organizers__action center">
-                    <button class="organizers__button button button--primary" data-modal="#feedback">
-                        Зарегистрироваться
-                    </button>
-                </div>
-            </div>
-        </section>
-        <!-- /. Organizers -->
 
         <!-- Gallery -->
         <section class="gallery" id="foto">
@@ -533,6 +560,49 @@
         </div>
     </div>
     <!-- /. Modal -->
+    <!-- Modal -->
+    <div class="modal hystmodal" id="catalog" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="modal__body hystmodal__window" role="modal window feedback" aria-modal="true">
+                <div class="modal__close" data-hystclose>
+                    <svg class="modal__close-svg" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L12 12M12 1L1 12" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <h3 class="modal__title title title--small title--dark title--w-medium center">
+
+                Запросить ссылку на каталог
+
+            </h3>
+                <div class="wpcf7">
+                    <form action="" id="callback-form" class="modal__form wpcf7-form">
+                        <div class="modal__field">
+                            <input type="text" name="name" class="modal__input" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="modal__field">
+                            <input type="email" name="email" class="modal__input" placeholder="Ваше Email" required>
+                        </div>
+                        <div class="modal__field">
+                            <input type="tel" name="phone" class="modal__input tel" placeholder="Ваш телефон" required>
+                        </div>
+                        <div class="modal__field">
+                            <input type="text" name="region" class="modal__input" placeholder="Ваш регион" required>
+                        </div>
+                        <div class="modal__wrap-policy">
+                            <div class="modal__policy text text--small text--black text--w-light center">
+                                Ваши данные находятся под защитой
+                            </div>
+                        </div>
+                        <div class="modal__actions">
+                            <input type="submit" value="Отправить" class="modal__btn button button--primary button--small">
+                            <span class="wpcf7-spinner"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /. Modal -->
     <!-- Success -->
     <div class="modal modal--success hystmodal js-modal-success" id="success" aria-hidden="true">
         <div class="modal__wrap hystmodal__wrap">
@@ -562,10 +632,10 @@
                 <div class="footer__column">
                     <div class="footer__logos">
                         <div class="footer__logo">
-                            <img src="img/logo_scm.png" alt="" class="footer__logo-img">
+                            <img src="img/logo_scm_white.svg" alt="" class="footer__logo-img">
                         </div>
                         <div class="footer__logo">
-                            <img src="img/logo_fs.png" alt="" class="footer__logo-img">
+                            <img src="img/logo_fs.svg" alt="" class="footer__logo-img">
                         </div>
                     </div>
                     <div class="footer__socials">
@@ -574,19 +644,13 @@
                         </div>
                         <div class="footer__socials-items">
                             <a href="https://www.youtube.com/@intervesp_ru" class="footer__social text text--normal text--w-medium" target="_blank">
-
-                                YouTube
-
+                                <img src="img/soc-1.svg" alt="" class="footer__social-icon">YouTube
                             </a>
                             <a href="https://vk.com/intervespstanki" class="footer__social text text--normal text--w-medium" target="_blank">
-
-                                VK
-
+                                <img src="img/soc-2.svg" alt="" class="footer__social-icon">VK
                             </a>
                             <a href="https://t.me/intervesp_ru" class="footer__social text text--normal text--w-medium" target="_blank">
-
-                                Telegram
-
+                                <img src="img/soc-3.svg" alt="" class="footer__social-icon">Telegram
                             </a>
                         </div>
                     </div>

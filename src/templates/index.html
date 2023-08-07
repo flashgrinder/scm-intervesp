@@ -20,6 +20,26 @@
             <h1 class="main-screen__heading title title--white title--big title--w-bold title--uppercase center">
                 ПРЕЗЕНТАЦИЯ НОВИНОК SCM
             </h1>
+            <div class="main-screen__countdown">
+                <div id="countdown" class="countdown">
+                    <div class="countdown__number">
+                        <span class="js-days countdown__time title title--white title--big title--w-bold title--uppercase center"></span>
+                        <span class="countdown__text title title--white title--small title--w-medium center">Дней</span>
+                    </div>
+                    <div class="countdown__number">
+                        <span class="js-hours countdown__time title title--white title--big title--w-bold title--uppercase center"></span>
+                        <span class="countdown__text title title--white title--small title--w-medium center">Часов</span>
+                    </div>
+                    <div class="countdown__number">
+                        <span class="js-minutes countdown__time title title--white title--big title--w-bold title--uppercase center"></span>
+                        <span class="countdown__text title title--white title--small title--w-medium center">Минут</span>
+                    </div>
+                    <div class="countdown__number">
+                        <span class="js-seconds countdown__time title title--white title--big title--w-bold title--uppercase center"></span>
+                        <span class="countdown__text title title--white title--small title--w-medium center">Секунд</span>
+                    </div>
+                </div>
+            </div>
             <h3 class="main-screen__time title title--white title--big title--w-bold title--uppercase center">
                 24 августа 2023
             </h3>
@@ -241,13 +261,39 @@
             <div class="ex__item">
                 <img src="img/ex/ex-7.jpg" alt="" class="ex__img-item">
             </div>
-            <div class="ex__item ex__item--modal" data-modal="#feedback">
+            <div class="ex__item ex__item--modal" data-modal="#catalog">
                 <img src="img/ex/ex-8.png" alt="" class="ex__img-item">
             </div>
         </div>
     </div>
 </section>
 <!-- /. Ex -->
+
+<!-- Organizers -->
+<section class="organizers block-padding">
+    <div class="organizers__body container">
+        <h2 class="numbers__heading title title--black title--large title--w-bold center title--line title--indent">
+            Организаторы
+        </h2>
+        <div class="organizers__items">
+            <a href="https://intervesp.ru/" class="organizers__link" target="_blank">
+                <img src="img/logo_scm.svg" alt="" class="organizers__logo">
+            </a>
+            <a href="https://www.scmgroup.com/ru" class="organizers__link" target="_blank">
+                <img src="img/logo_fs.svg" alt="" class="organizers__logo">
+            </a>
+            <a href="https://x2media.ru/" class="organizers__link" target="_blank">
+                <img src="img/x2media.svg" alt="" class="organizers__logo">
+            </a>
+        </div>
+        <div class="organizers__action center">
+            <button class="organizers__button button button--primary" data-modal="#feedback">
+                Зарегистрироваться
+            </button>
+        </div>
+    </div>
+</section>
+<!-- /. Organizers -->
 
 <!-- Video -->
 <section class="video" id="video">
@@ -266,32 +312,6 @@
     </div>
 </section>
 <!-- /. Video -->
-
-<!-- Organizers -->
-<section class="organizers block-padding">
-    <div class="organizers__body container">
-        <h2 class="numbers__heading title title--black title--large title--w-bold center title--line title--indent">
-            Организаторы
-        </h2>
-        <div class="organizers__items">
-            <a href="https://intervesp.ru/" class="organizers__link" target="_blank">
-                <img src="img/logo_scm.png" alt="" class="organizers__logo">
-            </a>
-            <a href="https://www.scmgroup.com/ru" class="organizers__link" target="_blank">
-                <img src="img/logo_fs.png" alt="" class="organizers__logo">
-            </a>
-            <a href="https://x2media.ru/" class="organizers__link" target="_blank">
-                <img src="img/x2media.webp" alt="" class="organizers__logo">
-            </a>
-        </div>
-        <div class="organizers__action center">
-            <button class="organizers__button button button--primary" data-modal="#feedback">
-                Зарегистрироваться
-            </button>
-        </div>
-    </div>
-</section>
-<!-- /. Organizers -->
 
 <!-- Gallery -->
 <section class="gallery" id="foto">

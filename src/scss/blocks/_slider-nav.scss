@@ -2,18 +2,25 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.slider-nav__arrow {
+  cursor: pointer;
   position: absolute;
   top: 50%;
-  right: 0;
-  width: 100%;
   z-index: 101;
   padding: 0 20px;
   transform: translateY(-50%);
 }
 
-.slider-nav__arrow {
-  cursor: pointer;
+.slider-nav__arrow--prev {
+  left: 0;
+}
+
+.slider-nav__arrow--next {
+  right: 0;
 }
 
 .slider-nav__arrow-svg {
