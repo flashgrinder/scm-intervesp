@@ -2478,11 +2478,11 @@ html.with-fancybox body.hide-scrollbar {
 
 .main-screen {
   position: relative;
-  background-image: url("../img/main-bg-1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 150px 0;
+  overflow: hidden;
 }
 
 .main-screen__overlay {
@@ -2494,6 +2494,25 @@ html.with-fancybox body.hide-scrollbar {
   background-color: #333;
   opacity: 0.74;
   mix-blend-mode: darken;
+}
+
+.main-screen__video {
+  background: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -99;
+}
+
+.main-screen__video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
 }
 
 .main-screen__inner {
