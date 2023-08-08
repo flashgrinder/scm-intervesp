@@ -37,6 +37,10 @@
   bottom: 0;
   width: 125vw;
   pointer-events: none;
+  @include tablet-block {
+    width: auto;
+    height: 100%;
+  }
 }
 
 .main-screen__inner {

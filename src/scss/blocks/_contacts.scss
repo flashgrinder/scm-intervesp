@@ -1,9 +1,26 @@
-.contacts__inner {
+.contacts__outer {
   padding: 50px 0 50px;
 }
 
-.contacts__info {
-  margin-top: 30px;
+.contacts__inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contacts__date,
+.contacts__time {
+  margin-top: 20px;
+}
+
+.contacts__item:first-child,
+.contacts__item:nth-child(2) {
+  padding-bottom: 20px;
+  border-bottom: 3px solid var(--color-green);
+}
+
+.contacts__item:nth-child(2),
+.contacts__item:last-child {
+  margin-top: 25px;
 }
 
 .contacts__link {
@@ -11,4 +28,20 @@
   display: block;
   color: var(--color-black);
   margin-top: 15px;
+}
+
+.contacts__transfer {
+  margin-top: 30px;
+}
+
+.contacts__map {
+  position: relative;
+}
+
+.contacts__route-btn {
+  position: absolute;
+  left: 8px;
+  bottom: 60px;
+  font-size: 14px;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
 }
