@@ -2717,7 +2717,7 @@ html.with-fancybox body.hide-scrollbar {
 
 .ex__item {
   display: flex;
-  width: 25%;
+  width: 20%;
   justify-content: center;
 }
 
@@ -2729,6 +2729,16 @@ html.with-fancybox body.hide-scrollbar {
   display: block;
   width: auto;
   height: auto;
+}
+
+.ex.ex--null .ex__item {
+  width: 33.33333%;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.ex.ex--null .ex__item:hover {
+  transform: scale(1.1);
 }
 
 /* Video */
@@ -3142,6 +3152,11 @@ html.with-fancybox body.hide-scrollbar {
     align-items: center;
   }
 
+  .ex.ex--null .ex__item {
+    width: 100%;
+    align-items: center;
+  }
+
   .video__heading {
     top: 30px;
   }
@@ -3190,6 +3205,12 @@ html.with-fancybox body.hide-scrollbar {
 
   .footer__outer {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .video__img-item {
+    height: 50vh;
   }
 }
 
